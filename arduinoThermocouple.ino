@@ -47,7 +47,7 @@ int main(void) {
 
     if (currentMillis - previousMillis >= interval) {
       previousMillis = currentMillis;
-      String _message = "{\"origin\":\"Thermocouple\",\"type\":\"measurement\",\"value\":\"" + String(mes_1) + "," + String(mes_2) + "\"}";
+      String _message = "{\"origin\":\"Thermocouple\",\"type\":\"measurement\",\"value\":\"" + String(mes_1, 3) + "," + String(mes_2, 3) + "\"}";
       Serial.println(_message);
       if (emergency) {
         _message = "{\"origin\":\"Thermocouple\",\"type\":\"log\",\"msg\":\"High temperature\"}";
