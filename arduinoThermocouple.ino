@@ -29,8 +29,8 @@ int main(void) {
   }
 
   while (true) {
-    double mes_1 = t_1.readCelsius();
-    double mes_2 = t_2.readCelsius();
+    long mes_1 = t_1.readCelsius();
+    long mes_2 = t_2.readCelsius();
 
 
     if ((mes_1 >= tempLimit && mes_1 != 2047.75) || (mes_2 >= tempLimit &&  mes_2 != 2047.75)) {
